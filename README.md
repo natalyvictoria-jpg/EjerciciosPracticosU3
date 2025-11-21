@@ -1,3 +1,22 @@
+<p align="center">
+  <img width="100%" src="https://img.shields.io/badge/NATALY%20GITHUB-pink?style=for-the-badge" alt="Nataly GitHub" />
+</p>
+
+<h1 align="center">
+  🧠📊 ESTRUCTURAS DE DATOS
+</h1>
+
+# GTID0141
+
+📘 *Materia:* Estructura de Datos  
+👩‍💻❤️ *Nombre:* Nataly Victoria Gonzalez Aviles  
+🏫 *Proyecto o Actividad:* Ejercicios Practicos realizados en la Unidad 3 
+📅 *Unidad:* 3 
+⚙️ *Lenguaje:* Java  
+🧠 *Propósito:* Desarrollar y aplicar aprendizajes de los temas que se realizaran en la unidad 3.
+Además, comprender el funcionamiento, mediante su implementación y uso, asi como subir evidencias de estos ejercicios practivos que sean realizados en clase.
+
+--
 # EjerciciosPracticosU3
 
 # Actividad 3 - INDENTIFICACION DE ELEMENTOS DE UN ARBOL 🌳
