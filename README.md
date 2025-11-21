@@ -17,9 +17,9 @@
 Además, comprender el funcionamiento, mediante su implementación y uso, asi como subir evidencias de estos ejercicios practivos que sean realizados en clase.
 
 --
-# EjerciciosPracticosU3
+# Ejercicios Practicos Unidad 3
 
-# Actividad 3 - INDENTIFICACION DE ELEMENTOS DE UN ARBOL 🌳
+## Actividad - INDENTIFICACION DE ELEMENTOS DE UN ARBOL 🌳
 
 <p align="center">
   <img src="https://img.shields.io/badge/🌳%20Identificación%20de%20Elementos%20de%20un%20Árbol-pink?style=for-the-badge" alt="Identificación de Elementos de un Árbol">
