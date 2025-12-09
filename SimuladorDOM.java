@@ -1,21 +1,26 @@
 package Nataly;
-// Author: Nataly Victoria Gonzalez Aviles
-// Materia: Estructura de Datos
-// Grupo: GTID0141
 
 import javax.swing.*;
 import javax.swing.tree.*;
 import java.awt.*;
 import java.awt.event.*;
 
-/**
- * @author Nataly Victoria Gonzalez Aviles
- */
+class Nodo extends DefaultMutableTreeNode {
+
+    public Nodo(String nombre) {
+        super(nombre);
+    }
+
+    @Override
+    public String toString() {
+        return (getUserObject() != null) ? getUserObject().toString() : "nodo";
+    }
+}
 
 public class SimuladorDOM extends JFrame {
 
     private JTree arbolDOM;
-    private DefaultMutableTreeNode raiz;
+    private Nodo raiz;
     private DefaultTreeModel modeloArbol;
     private JTextArea vistaHTML;
     private JEditorPane vistaPrevia;
@@ -61,15 +66,16 @@ public class SimuladorDOM extends JFrame {
     }
 
     private void inicializarComponentes() {
-        raiz = new DefaultMutableTreeNode("html");
+        raiz = new Nodo("html");
         modeloArbol = new DefaultTreeModel(raiz);
         arbolDOM = new JTree(modeloArbol);
 
-        DefaultMutableTreeNode head = new DefaultMutableTreeNode("head");
-        DefaultMutableTreeNode title = new DefaultMutableTreeNode("title: Mi Página Web");
+        Nodo head = new Nodo("head");
+        Nodo title = new Nodo("title: Mi Página Web");
         head.add(title);
 
-        DefaultMutableTreeNode body = new DefaultMutableTreeNode("body");
+        Nodo body = new Nodo("body");
+
         raiz.add(head);
         raiz.add(body);
 
@@ -158,18 +164,18 @@ public class SimuladorDOM extends JFrame {
 
         JPanel panelInfo = new JPanel();
         panelInfo.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        JLabel lblInfo = new JLabel("💡 Selecciona un nodo padre en el árbol y agrega elementos HTML");
+        JLabel lblInfo = new JLabel("Selecciona un nodo padre en el árbol y agrega elementos HTML");
         lblInfo.setForeground(new Color(100, 0, 200));
         panelInfo.add(lblInfo);
         add(panelInfo, BorderLayout.NORTH);
     }
 
-    private void agregarNodo() { /* Lógica sin cambios */ }
-    private void eliminarNodo() { /* Lógica sin cambios */ }
-    private void limpiarArbol() { /* Lógica sin cambios */ }
-    private void actualizarVistaHTML() { /* Lógica sin cambios */ }
-    private void actualizarVistaPrevia(String htmlCode) { /* Lógica sin cambios */ }
-    private void generarHTML(DefaultMutableTreeNode nodo, StringBuilder html, int nivel) { /* Lógica sin cambios */ }
+    private void agregarNodo() { }
+    private void eliminarNodo() { }
+    private void limpiarArbol() { }
+    private void actualizarVistaHTML() { }
+    private void actualizarVistaPrevia(String htmlCode) { }
+    private void generarHTML(Nodo nodo, StringBuilder html, int nivel) { }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
@@ -178,4 +184,3 @@ public class SimuladorDOM extends JFrame {
         });
     }
 }
-
