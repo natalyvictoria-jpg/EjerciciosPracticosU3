@@ -29,3 +29,13 @@ Además, comprender el funcionamiento, mediante su implementación y uso, asi co
 | Documento | Enlace |
 | ---------- | ------- |
 | Ejercicio y evidencias de la actividad realizada en clase el dia Viernes 21 de Noviembre, en la cual realizamos un ejercicio practico de los elementos que componen los arboles. | [📘 Ver PDF](IdentificaciondeElementosdeunArbol.pdf) |
+
+
+## Actividad - Ventanas de Swing
+
+| Archivo | Ver Código |
+|---------|------------|
+| SimuladorDOM.java | [📄 Ver código] [NodoArbol.java](SimuladorDOM.java) |
+| ArbolBB.java | [📄 Ver código] [ArbolBinario.java](ArbolBB.java) |
+| GestorInventario.java | [📄 Ver código] [PruebaArbol.java](GestorInventario.java) |
+
