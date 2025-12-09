@@ -1,4 +1,7 @@
 package Nataly;
+// Author: Nataly Victoria Gonzalez Aviles
+// Materia: Estructura de Datos
+// Grupo: GTID0141
 
 import javax.swing.*;
 import javax.swing.tree.*;
@@ -175,3 +178,4 @@ public class SimuladorDOM extends JFrame {
         });
     }
 }
+
