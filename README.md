@@ -35,7 +35,7 @@ Además, comprender el funcionamiento, mediante su implementación y uso, asi co
 
 | Archivo | Ver Código |
 |---------|------------|
-| SimuladorDOM.java | [📄 Ver código] [NodoArbol.java](SimuladorDOM.java) |
-| ArbolBB.java | [📄 Ver código] [ArbolBinario.java](ArbolBB.java) |
-| GestorInventario.java | [📄 Ver código] [PruebaArbol.java](GestorInventario.java) |
+| SimuladorDOM.java | [📄 Ver código] [SimuladorDOM.java](SimuladorDOM.java) |
+| ArbolBB.java | [📄 Ver código] [ArbolBB.java](ArbolBB.java) |
+| GestorInventario.java | [📄 Ver código] [GestorInventario.java](GestorInventario.java) |
 
