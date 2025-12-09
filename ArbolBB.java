@@ -1,5 +1,7 @@
 package Nataly;
 
+//@author Nataly Victoria Gonzalez Aviles
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -12,7 +14,7 @@ public class ArbolBB extends JFrame {
     private JTextField txtValor;
     private JTextArea txtResultado;
 
-    // 🔥 Guardamos botones en variables
+    // Guardamos botones en variables
     private JButton btnInsertar, btnEliminar, btnBuscar, btnLimpiar;
     private JButton btnInOrden, btnPreOrden, btnPostOrden, btnEjecutar;
     private JComboBox<String> comboPruebas;
@@ -244,3 +246,4 @@ public class ArbolBB extends JFrame {
         SwingUtilities.invokeLater(() -> new ArbolBB().setVisible(true));
     }
 }
+
