@@ -1,5 +1,8 @@
 package Nataly;
 
+/*@author Nataly Victoria Victoria Gonzalez Aviles
+*/
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashSet;
@@ -231,3 +234,4 @@ public class GestorInventario extends JFrame {
         });
     }
 }
+
