@@ -1,20 +1,39 @@
 package Nataly;
 
-/*@author Nataly Victoria Victoria Gonzalez Aviles
-*/
-
 import javax.swing.*;
 import java.awt.*;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Gestor de Inventario de Productos usando conjuntos (Set) y Swing.
- * Permite agregar, eliminar, buscar y realizar operaciones entre conjuntos de productos.
- */
 public class GestorInventario extends JFrame {
 
-    // Conjuntos de productos por categoría
+    // Clase interna Producto (no afecta la funcionalidad actual)
+    class Producto {
+        private String nombre;
+        private String codigo;
+        private String categoria;
+        private int cantidad;
+        private double precio;
+
+        public Producto(String nombre, String codigo, String categoria, int cantidad, double precio) {
+            this.nombre = nombre;
+            this.codigo = codigo;
+            this.categoria = categoria;
+            this.cantidad = cantidad;
+            this.precio = precio;
+        }
+
+        public String getCodigo() {
+            return codigo;
+        }
+
+        @Override
+        public String toString() {
+            return nombre + " [" + codigo + "] - Cant: " + cantidad + " - Precio: $" + precio;
+        }
+    }
+
+    // Conjuntos (se mantienen como String para no alterar funcionalidad)
     private Set<String> categoriaA = new HashSet<>();
     private Set<String> categoriaB = new HashSet<>();
 
@@ -28,14 +47,12 @@ public class GestorInventario extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // Panel principal con fondo amarillo
         JPanel panelPrincipal = new JPanel();
         panelPrincipal.setBackground(new Color(255, 255, 153));
         panelPrincipal.setLayout(new BorderLayout(10, 10));
         panelPrincipal.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         setContentPane(panelPrincipal);
 
-        // Panel superior con áreas de texto
         JPanel panelTextos = new JPanel(new GridLayout(1, 3, 10, 10));
         txtCategoriaA = new JTextArea();
         txtCategoriaA.setBorder(BorderFactory.createTitledBorder("Categoría A"));
@@ -49,11 +66,9 @@ public class GestorInventario extends JFrame {
         panelTextos.add(new JScrollPane(txtResultado));
         panelPrincipal.add(panelTextos, BorderLayout.CENTER);
 
-        // Panel inferior con controles
         JPanel panelInferior = new JPanel();
         panelInferior.setLayout(new GridLayout(2, 3, 10, 10));
 
-        // Panel de agregar productos
         JPanel panelAgregar = new JPanel(new GridLayout(6, 2, 5, 5));
         panelAgregar.setBorder(BorderFactory.createTitledBorder("Agregar Producto"));
 
@@ -80,7 +95,6 @@ public class GestorInventario extends JFrame {
 
         panelInferior.add(panelAgregar);
 
-        // Panel de operaciones básicas
         JPanel panelBasico = new JPanel(new GridLayout(6, 1, 5, 5));
         panelBasico.setBorder(BorderFactory.createTitledBorder("Operaciones Básicas"));
 
@@ -103,7 +117,6 @@ public class GestorInventario extends JFrame {
 
         panelInferior.add(panelBasico);
 
-        // Panel operaciones de conjuntos
         JPanel panelConjuntos = new JPanel(new GridLayout(6, 1, 5, 5));
         panelConjuntos.setBorder(BorderFactory.createTitledBorder("Operaciones de Conjuntos"));
 
@@ -141,7 +154,7 @@ public class GestorInventario extends JFrame {
             return;
         }
 
-        String producto = nombre + " [" + codigo + "] - " + "Cant: " + cantidad + " - Precio: $" + precio;
+        String producto = nombre + " [" + codigo + "] - Cant: " + cantidad + " - Precio: $" + precio;
 
         if (categoria.equals("A")) {
             categoriaA.add(producto);
@@ -234,4 +247,3 @@ public class GestorInventario extends JFrame {
         });
     }
 }
-
